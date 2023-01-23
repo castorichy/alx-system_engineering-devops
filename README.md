@@ -1,2 +1,1 @@
-my alx new good projects
-
+This project show you How you can use commands for the win
