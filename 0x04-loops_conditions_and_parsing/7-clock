@@ -1,16 +1,12 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
-i=1
-j=0
-while [ "$j" -le 12 ]
-do
-    echo "Hour: $j"
-    i=1
-    while [ "$i" -le 59 ]
-    do
-        echo "$i"
-	i=$((i + 1))
-    done
-    j=$((j + 1))
+# script that displays time for 12 hours and 59 minutes
+h=0
+while [ $h -le 12 ]; do
+	m=1
+	echo "Hour: $h"
+	while [ $m -le 59 ]; do
+		echo "$m"
+		m=$((m+1))
+	done
+	h=$((h+1))
 done
-i=$i

@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
-# This script is displaying "Holberton School" 10 times
-i=10
-while [ "$i" -gt 0 ]
-do
-    echo "Holberton School"
-    if [ "$i" -eq 2 ]
-    then
-        echo "Hi"
-    fi
-    i=$((i - 1))
+# Prints "Best School" 10 times, but on the 9th iteration, displays "Hi" on a new line
+n=0
+while ((n < 10)); do
+	echo "Best School"
+	if ((n == 8)); then
+		echo "Hi"
+	fi
+	n=$((n+1))
 done
-i=$i
